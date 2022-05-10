@@ -1,10 +1,11 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
     html{
         font-size: 62.5%;
-        margin: 0;
     }
     body{
-        /* display: flex; */
-        /* flex-flow: column; */
         margin: 0;
         width: 100%;
     }
@@ -55,7 +56,7 @@
         align-content: center;
         justify-content: center;
         color: white;
-        background: url('js-cup.png');
+        background: url('assets/img/js-cup.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -130,22 +131,22 @@
     }
     .ubicacion{
         background-color: white;
-        background-image: url('./assets/placeholder.png');
+        background-image: url('./assets/icons/placeholder.png');
         border-radius: 9px;
         
       }
     .linkedin{
         
-        background-image: url('./assets/linkedin.png');
+        background-image: url('./assets/icons/linkedin.png');
        
       }
     .github{
         background-color: white;
-        background-image: url('./assets/github.png');
+        background-image: url('./assets/icons/github.png');
         border-radius: 2px;
       }
       .email{
-        background-image: url('./assets/correo-electronico.png');
+        background-image: url('./assets/icons/correo-electronico.png');
       }
 
     .content{
@@ -189,24 +190,108 @@
         max-width: 95%;
         margin: 10px;
     }
+    
+
+    .contacto{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
     .proyectos__titulo{
         font-size: 4rem;
         margin-left: 10px;
         margin-top: 10px;
     }
-    .proyectos div{
+
+    .proyectos{
+        display: flex;
+        align-content: center;
         padding: 20px;
-        margin-bottom: 30px;
+        overflow: hidden;
+        width: 100%;
+        height: 450px;
     }
-    .proyectos__listado{
-        list-style-type: disclosure-closed;
-        font-size: 2rem;
-        text-align: justify;
+    
+    .swiper-wrapper  {
+        /* display: flex; */
+        /* align-content: center; */
     }
 
-    .contacto{
-        font-size: 4rem;
+    .swiper {
+        width: 100%;
+        
+        /* height: 800px; */
+    }
+    
+    
+    .card-proyects{
+        
+        box-shadow: 0 0 6px 7px rgba(0, 0, 0, 0.4);
+        border-radius: 10px 10px 10px 10px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 250px;
+        height: 350px;
+        transition: 0.4s ease-in-out;
+    }
+    .card-proyects:hover{
+        transform: scale(1.08);
+    }
+    .imagen-proyectos{
+        border-radius: 10px 10px 0 0 ;
+        width: 100%;
+        height: 200px;     
+    }
+    .descripcion-proyectos{
+        position: relative;
+        color: black;
+        
+        /* border: 1px solid black; */
+        border-radius: 0 0 10px 10px ;
+        height: 100%;
+        padding: 10px 15px;
+        
+    }
+    .titulo-proyecto{
+        font-size: 1.8rem;
+        
+    }
+    .decripcion__parrafo{
+        margin-top:20px ;
+        font-size: 1.4rem;
+    }
+    .lenguajes-proyectos{
+        height: 40px;
+        position: absolute;
+        
+        bottom: 20px;
+        width: 100%;
+    }
+    .react{
+        display: inline-block;
+        background-color: rgb(13 202 240);
+        border-radius: 14px 6px;
+        color: white;
+        text-align: center;
+        line-height: 27px;
+        font-size: 1.6rem;
         font-weight: bold;
+        height: 30px;
+        width: 60px;           
+    }
+    .javascript{
+        display: inline-block;
+        background-color: rgb(255 193 8);
+        border-radius: 14px 6px;
+        color: black;
+        text-align: center;
+        line-height: 27px;
+        font-size: 1.6rem;
+        font-weight: bold;
+        height: 30px;
+        width: 90px;           
     }
 
     .footer{
