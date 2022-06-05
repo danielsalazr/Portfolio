@@ -241,6 +241,7 @@
     }
     .imagen-proyectos{
         border-radius: 10px 10px 0 0 ;
+        border-bottom: 5px  solid rgba(225, 225, 225, 1.0);
         width: 100%;
         height: 200px;     
     }
