@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- <link rel="stylesheet" href="style.css">  -->
+    <link rel="stylesheet" href="./mobile.css">
+    <!-- <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px)"> -->
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Portafolio Salazar</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__nombre">Portfolio Daniel Salazar</div>
+    <div class="nav">
+      <nav>
+        <input type="checkbox" name="my-input" id="yes" value="˅">
+        <label for="yes">Menu ˅</label>
+        <ul class="menu">
+          <li class="Menu-Item uno"><a href="#mi" class="text">Sobre mi</a> </li>
+          <li class="Menu-Item dos"><a href="#habilidades">Habilidades</a></li>
+          <li class="Menu-Item tres"><a href="#proyectos">Proyectos</a></li>
+          <li class="Menu-Item cuatro"><a href="https://sypde.xyz:15000/CV_Daniel_Salazar_Munoz.pdf">Curriculum</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+  </header>
+
+  <section class="container">
+
+    <!-- <div class="image image__background">
+      <img class="backgr" src="js-cup.png" alt="Background">
+    </div> -->
+
+    <div class="yo">
+      <div class="yo__sideCard"> 
+        <img class="foto" src="assets/img/foto.jpg" alt="">
+        <div>
+          <h2>Ingenierio electronico</h2>
+          <ul class="referencias">Contactame (haz click):
+            <li><span>Cali, colombia</span> <span class="ubicacion"></span></li>
+            <li><a href="https://www.linkedin.com/in/daniel-salazar-mu%C3%B1oz-b54077a8/">Linked In <span class="linkedin"></span></a></li>
+            <li><a href="https://github.com/danielsalazr">GitHub <span class="github"></span></a></li>
+            <li><a href="mailto:danielsalazr@hotmail.com">E-Mail <span class="email"></span></a></li>
+          </ul>
+        </div>
+        
+      </div> 
+      <div class="content">
+        <h2 class="mi" id="mi">Sobre mi:</h2>
+        <label class="presentacion" for="">
+          Soy ingeniero electronico y me gusta mucho la 
+        programacion, 
+        Empece a programar en arduino y utilizando con C, luego aprendi python,
+        posteriormente Java, al dia de hoy utilizo mucho javascript para ejecutar 
+        servicios utilizando node JS y express se manejar el HTML, CSS y me gusta 
+        mucho manipular el DOM para visualizar informacion que envio a mis paginas 
+        desde el Backend, empece a programar debido a que empece un emprendimiento 
+        al que llamamos Dosificando.com cuyo proposito era la fabricacion de maquinas
+         que se conectaran a Bases de datos y cuya informacion de produccion se pudiera
+          visualizar en paginas Web.
+        </label>
+      </div>
+    </div>
+    
+      <div class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulos">Lenguajes de programacion</h2>
+        <div class="habilidades__lenguajes">
+          <div class="card">
+            <img class="logos" src="assets/img/html.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/css3.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/javascript.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/python.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/java.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/lenguaje_c.png" alt="">
+          </div>
+        </div>
+        <h2 class="habilidades__titulos">frameworks</h2>
+        <div class="habilidades__frameworks">
+          <div class="card">
+            <img class="logos" src="assets/img/React1.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/bootstrap.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/node_js.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/express.png" alt="">
+          </div>
+          <div class="card">
+            <img class="logos" src="assets/img/dj.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="proyectos" id="proyectos"> -->
+      <h2 class="proyectos__titulo">Proyectos</h2>
+      
+      <section class="proyectos swiper mySwiper">
+        <div class="swiper-wrapper">
+            <a class="swiper-slide" href="https://sypde.xyz:15000/cha">
+                <div class="card-proyects">
+                    <img class="imagen-proyectos" src="assets/projects/Data Monitoring.PNG" alt="">
+                    <div class="descripcion-proyectos">
+                        <h2 class="titulo-proyecto">Dashboard Web de Maquinas utilizando IOT.</h2>
+                        <p class="decripcion__parrafo">
+                            Proyecto de servior web Para IOT con comunicacion MQTT para monitoreo remoto de maquinas industriales hecho con bootstrap.
+                        </p>
+                        <p class="lenguajes-proyectos">
+                            <!-- <span class="react">React</span> -->
+                        <span class="javascript">Javascript</span>
+                        </p> 
+                    </div>
+                </div>
+            </a>
+            <a class="swiper-slide" href="https://danielsalazr.github.io/Introduccion-a-react/">
+              <div class="card-proyects">
+                  <img class="imagen-proyectos" src="assets/projects/TodoList.PNG" alt="">
+                  <div class="descripcion-proyectos">
+                      <h2 class="titulo-proyecto">Lista de Todos</h2>
+                      <p class="decripcion__parrafo">
+                          Lista de Tareas para no olvidar tus quehaceres, diseñada en React y subida a gitub pages.
+                      </p>
+                      <p class="lenguajes-proyectos">
+                          <span class="react">React</span>
+                      <span class="javascript">Javascript</span>
+                      </p> 
+                  </div>
+              </div>
+          </a>
+          <a class="swiper-slide" href="https://629c2a5e1aa1b50008df3351--comfy-dodol-e7c449.netlify.app/">
+            <div class="card-proyects">
+                <img class="imagen-proyectos" src="./assets/projects/simple_porfolio.PNG" alt="">
+                <div class="descripcion-proyectos">
+                    <h2 class="titulo-proyecto">Portafolio con consumo de API</h2>
+                    <p class="decripcion__parrafo">
+                        Portafolio simple elaborado con Webpack, sirviendo en netlify y actualizado directamente desde el repositorio de github.
+                    </p>
+                    <p class="lenguajes-proyectos">
+                    <span class="javascript">Javascript</span>
+                    </p> 
+                </div>
+            </div>
+        </a>
+        <a class="swiper-slide" href="https://sypde.xyz:15000/portafolio/index.html">
+          <div class="card-proyects">
+              <img class="imagen-proyectos" src="https://picsum.photos/700/400?random" alt="">
+              <div class="descripcion-proyectos">
+                  <h2 class="titulo-proyecto">Lorem Ipsum</h2>
+                  <p class="decripcion__parrafo">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis egestas velit eget molestie.
+                  </p>
+                  <p class="lenguajes-proyectos">
+                      <span class="react">React</span>
+                  <span class="javascript">Javascript</span>
+                  </p> 
+              </div>
+          </div>s
+      </a>
+      <a class="swiper-slide" href="https://sypde.xyz:15000/portafolio/index.html">
+        <div class="card-proyects">
+            <img class="imagen-proyectos" src="https://picsum.photos/700/400?random" alt="">
+            <div class="descripcion-proyectos">
+                <h2 class="titulo-proyecto">Lorem Ipsum<</h2>
+                <p class="decripcion__parrafo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis egestas velit eget molestie.
+                </p>
+                <p class="lenguajes-proyectos">
+                    <span class="react">React</span>
+                <span class="javascript">Javascript</span>
+                </p> 
+            </div>
+        </div>
+    </a>
+        </div>
+        <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+    </section>
+      
+  <!-- </section> -->
+    <!-- <section class="contacto">Contacto
+      <ul>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i></li>
+      </ul>
+    </section>
+    <aside class="aside">Aside</aside>
+   -->
+  <footer class="footer">
+    <label class="footer__porta">Portafolio De Proyectos</label>
+    <label class="footer__autor">Hecho por Daniel Salazar Munoz</label> 
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        centeredSlides: false,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+          590: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          890: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          1180: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+          },
+          1450: {
+            slidesPerView: 5,
+            spaceBetween: 15,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+{
+  "status": "done",
+  "assets": {
+    "assets/images/9f255c291c342537b700.jpg": {
+      "name": "assets/images/9f255c291c342537b700.jpg",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\9f255c291c342537b700.jpg"
+    },
+    "assets/images/f3d41c759548aeb34466.png": {
+      "name": "assets/images/f3d41c759548aeb34466.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\f3d41c759548aeb34466.png"
+    },
+    "assets/images/f249b38224ca41a0b909.png": {
+      "name": "assets/images/f249b38224ca41a0b909.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\f249b38224ca41a0b909.png"
+    },
+    "assets/images/22cfdd1cba253783ce51.png": {
+      "name": "assets/images/22cfdd1cba253783ce51.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\22cfdd1cba253783ce51.png"
+    },
+    "assets/images/14157efadeebea1d8588.png": {
+      "name": "assets/images/14157efadeebea1d8588.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\14157efadeebea1d8588.png"
+    },
+    "assets/main.4ff2bfc1302ff2e2f87b.css": {
+      "name": "assets/main.4ff2bfc1302ff2e2f87b.css",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\main.4ff2bfc1302ff2e2f87b.css"
+    },
+    "main.365f16d4b3229e527371.js": {
+      "name": "main.365f16d4b3229e527371.js",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\main.365f16d4b3229e527371.js"
+    },
+    "assets/images/660a5e3ebb939369be66.png": {
+      "name": "assets/images/660a5e3ebb939369be66.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\660a5e3ebb939369be66.png"
+    },
+    "assets/images/9c4faee7513f87e9b3b3.png": {
+      "name": "assets/images/9c4faee7513f87e9b3b3.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\9c4faee7513f87e9b3b3.png"
+    },
+    "assets/images/7821a11cc18bedb7290d.png": {
+      "name": "assets/images/7821a11cc18bedb7290d.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\7821a11cc18bedb7290d.png"
+    },
+    "assets/images/8932205d8701217166c9.png": {
+      "name": "assets/images/8932205d8701217166c9.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\8932205d8701217166c9.png"
+    },
+    "assets/images/a4a49dfe20c4a1a2c681.png": {
+      "name": "assets/images/a4a49dfe20c4a1a2c681.png",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\assets\\images\\a4a49dfe20c4a1a2c681.png"
+    },
+    "./index.html": {
+      "name": "./index.html",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\index.html"
+    },
+    "main.2e8cfe2de045f0284a7f.js": {
+      "name": "main.2e8cfe2de045f0284a7f.js",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\main.2e8cfe2de045f0284a7f.js"
+    },
+    "main.e2321d36eb2cf0d35bd7.hot-update.js": {
+      "name": "main.e2321d36eb2cf0d35bd7.hot-update.js",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\main.e2321d36eb2cf0d35bd7.hot-update.js"
+    },
+    "main.e2321d36eb2cf0d35bd7.hot-update.json": {
+      "name": "main.e2321d36eb2cf0d35bd7.hot-update.json",
+      "path": "C:\\Users\\User\\Desktop\\Proyectos de software\\portafolio\\dist\\main.e2321d36eb2cf0d35bd7.hot-update.json"
+    }
+  },
+  "chunks": {
+    "main": [
+      "assets/main.4ff2bfc1302ff2e2f87b.css",
+      "main.2e8cfe2de045f0284a7f.js",
+      "main.e2321d36eb2cf0d35bd7.hot-update.js"
+    ]
+  }
+}

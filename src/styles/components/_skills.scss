@@ -1,0 +1,31 @@
+.habilidades{
+    width: auto;
+    text-align: center;
+}
+.habilidades .habilidades__titulos{
+    color: black;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+  }
+.habilidades__lenguajes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+    font-size: 4rem;
+    justify-content: center;
+}
+
+.habilidades__frameworks{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 160px));
+    font-size: 4rem;
+    justify-content: center;
+}
+.card {
+    width: 95%;
+    margin: 1px;
+}
+.logos{
+    max-width: 95%;
+    margin: 10px;
+}

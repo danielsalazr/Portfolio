@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, #0093E9 0%, #e9c600 100%);
+    color: white;
+    font-size: 2rem;
+    outline: 1px solid salmon; /* a diferencia de border, este no ocupa espacio*/
+    height: 80px;
+    margin: 0px;
+    place-content: space-between; 
+    width: 100%;
+
+
+    // .footer > .footer__porta{
+    &__porta{
+        margin-left: 10px;
+        text-align: left;
+    }
+    // .footer > .footer__autor {
+    &__autor {
+        margin-right: 10px;
+        text-align: right;
+    }
+    
+
+}
+
