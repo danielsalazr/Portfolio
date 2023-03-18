@@ -1,65 +1,81 @@
 import React from 'react'
 import html from '@images/html.png'
-// import css from '@images/css3.png';
+import css from '@images/css3.png';
+import javascript  from '@images/javascript.png';
+import python  from '@images/python.png';
+import java  from '@images/java.png';
+import c  from '@images/lenguaje_c.png';
+import react1  from '@images/React1.png';
+import bootstrap  from '@images/bootstrap.png';
+import tailwind  from '@images/Tailwind_CSS_Logo.png';
+import nodejs  from '@images/node_js.png';
+import expres  from '@images/express.png';
+import django  from '@images/dj.png';
+
 
 const Skills = () => {
 
-//  const skillsImages =  [
-//     {
-//         image: html,
-//     },
-//     {
-//         image: css,
-//     },
-//     {
-//         image: html,
-//     },
-// ]
+ const skillsImages =  [
+    {
+        image: html,
+    },
+    {
+        image: css,
+    },
+    {
+        image: javascript,
+    },
+    {
+        image: python,
+    },
+    {
+        image: java,
+    },
+    {
+      image: c,
+    },
+]
+  const frameworksImages =  [
+    {
+        image: django,
+    },
+    {
+        image: react1,
+    },
+    {
+        image: bootstrap,
+    },
+    {
+        image: tailwind,
+    },
+    {
+        image: nodejs,
+    },
+    {
+        image: expres,
+    },
+  ]
 
   return (
     <>
-        <div class="habilidades" id="habilidades">
-            <h2 class="habilidades__titulos">Lenguajes de programacion</h2>
-            <div class="habilidades__lenguajes">
-                <div class="card">
-                <img class="logos" src={html} alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/javascript.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/python.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/java.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/lenguaje_c.png" alt=""></img>
-                </div>
+        <div className="habilidades" id="habilidades">
+            <h2 className='page-titles'>Lenguajes de programacion</h2>
+            <div className="habilidades__lenguajes">
+                {skillsImages.map(skills => (
+                  <div className="card">
+                    <img className="logos" src={skills.image} alt=""></img>
+                  </div>
+                  ))
+                }
             </div>
-            <h2 class="habilidades__titulos">frameworks</h2>
-            <div class="habilidades__frameworks">
-                <div class="card">
-                <img class="logos" src="assets/img/React1.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/bootstrap.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/node_js.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/express.png" alt=""></img>
-                </div>
-                <div class="card">
-                <img class="logos" src="assets/img/dj.png" alt=""></img>
-                </div>
+            <h2 className="page-titles">frameworks</h2>
+            <div className="habilidades__frameworks">
+              {frameworksImages.map(frameworks => (
+                  <div className="card">
+                    <img className="logos" src={frameworks.image} alt=""></img>
+                  </div>
+                  ))
+                }
             </div>
         </div>
     </>

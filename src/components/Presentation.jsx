@@ -8,7 +8,7 @@ const Presentation = () => {
             <div className="yo__sideCard">
                 <img className="foto" src={photo} alt=""></img>
                 <div>
-                <h2>Frontend Developer</h2>
+                <h2 >Frontend Developer</h2>
                 
                 <ul className="referencias">
                     <b>Contactame:</b> 
@@ -25,15 +25,15 @@ const Presentation = () => {
                 <h2 className="mi" id="mi">Sobre mi:</h2>
                 <label className="presentacion" for="">
                 Soy Frontend Developer con background en Ingeniería electrónica, tengo experiencia en HTML, CSS, React,
-                          Bootstrap y WebPack, he desarrollado proyectos para presentar datos y hacer tracking en procesos
+                Bootstrap y WebPack, he desarrollado proyectos para presentar datos y hacer tracking en procesos
                 industriales
-                          y un sistema de riego en de una plantación. Quiero trabajar como Frontend en una empresa de
+                y un sistema de riego en de una plantación. Quiero trabajar como Frontend en una empresa de
                 desarrollo con
-                          aplicaciones reactivas, Soy autodidacta en formación constante, me entusiasma experimentar e
+                aplicaciones reactivas, Soy autodidacta en formación constante, me entusiasma experimentar e
                 implementar ideas
-                          con mi equipo para convertirlas en grandes experiencias para la usabilidad, accesibilidad y
+                con mi equipo para convertirlas en grandes experiencias para la usabilidad, accesibilidad y
                 presentación de
-                          datos mediante el consumo de API’s.
+                datos mediante el consumo de API’s.
                 </label>
             </div>
         </div>

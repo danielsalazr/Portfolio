@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Main from '../components/Main';
 import Footer from '../components/footer';
 import Container from '../components/Container';
+import Projects from '../components/Projects';
 // import Presentation from '../components/Presentation';
 
 
@@ -14,7 +15,8 @@ const App = () => {
         <div>
             <Header />
             <Container />
-                <Main />
+                {/* <Main /> */}
+                <Projects />
             <Footer />
         </div>
     );
