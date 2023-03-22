@@ -9,6 +9,7 @@ import dataMonitoring from '@assets/projects/Data_Monitoring.png'
 import dashboard from '@assets/projects/dashboard.png'
 import catalogo from '@assets/projects/catalogo.png'
 import portfolio from '@assets/projects/simple_porfolio.png'
+import empleados from '@assets/projects/busqueda_empleados.png'
 
 SwiperCore.use([Navigation]);
 
@@ -27,6 +28,16 @@ const Projects = () => {
             ]
         },
         {
+            name: 'Registro de empleados',
+            link: 'http://sypde.xyz:8002/',
+            image:empleados,
+            description:'sistema para manejo de empleados de una empresa. ',
+            languages: [
+                'Django',
+                'Python',
+            ]
+        },
+        {
             name: 'Lista de Todos',
             link: 'https://danielsalazr.github.io/Introduccion-a-react/',
             image:todoListimage,
@@ -38,7 +49,7 @@ const Projects = () => {
         },
         {
             name: 'Seguimiento de Tareas',
-            link: 'http://sypde.xyz:8000/',
+            link: 'http://sypde.xyz:8006/',
             image:dashboard,
             description:'Catalogo para poder verificar articulos de uso cotidiano en una empresa, permite crear, buscar y observar listado completo de items. ',
             languages: [
@@ -48,7 +59,7 @@ const Projects = () => {
         },
         {
             name: 'Catalogo de Articulos',
-            link: 'http://sypde.xyz:8042/',
+            link: 'http://sypde.xyz:8004/',
             image:catalogo,
             description:'Catalogo para poder verificar articulos de uso cotidiano en una empresa, permite crear, buscar y observar listado completo de items. ',
             languages: [
@@ -56,11 +67,12 @@ const Projects = () => {
                 'Python',
             ]
         },
+        
         {
-            name: 'Portafolio de consumo de API REST',
+            name: 'Consumo de API REST',
             link: 'https://629c2a5e1aa1b50008df3351--comfy-dodol-e7c449.netlify.app/',
             image:portfolio,
-            description:'Portafolio simple elaborado con Webpack, sirviendo en netlify y actualizado directamente desde el repositorio de github.',
+            description:'Portafolio simple elaborado con Webpack, sirviendo en netlify y actualizado desde el repositorio de github.',
             languages: [
                 'Javascript',
             ]

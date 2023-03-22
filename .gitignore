@@ -5,6 +5,8 @@
 *.jpeg
 *.svg
 
+*.pdf
+
 *.woff
 *.woff2
 
