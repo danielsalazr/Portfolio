@@ -79,7 +79,19 @@ module.exports = {
         //       esModule: false,
         //     },
         // }
-      }
+      },
+      {
+        test: /\.pdf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'pdfs/'
+            }
+          }
+        ]
+      },
     ]
   },
   plugins: [
