@@ -121,8 +121,8 @@ const Projects = () => {
           };
 
   return (
-    <>
-        <h2 className="page-titles">Proyectos</h2>
+    <div id="proyectos">
+        <h2 className="page-titles" >Proyectos</h2>
 
         <Swiper
                         // spaceBetween={20}
@@ -158,7 +158,7 @@ const Projects = () => {
                     {/* <div className="swiper-pagination"></div> */}
                     </Swiper>
 
-    </>
+    </div>
   )
 }
 
