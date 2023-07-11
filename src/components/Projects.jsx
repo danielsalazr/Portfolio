@@ -18,7 +18,7 @@ const Projects = () => {
     const projectos = [
         {
             name: 'Dashboard Web IOT.',
-            link: 'https://sypde.xyz:15000/cha',
+            link: 'http://sicla.lat:15000/cha',
             image:dataMonitoring,
             description:'Servicio web IOT con comunicacion MQTT permite monitoreo remoto de maquinas industriales.',
             languages: [
@@ -29,7 +29,7 @@ const Projects = () => {
         },
         {
             name: 'Registro de empleados',
-            link: 'http://sypde.xyz:8002/',
+            link: 'http://sicla.lat:8002/',
             image:empleados,
             description:'sistema para manejo de empleados de una empresa. ',
             languages: [
@@ -49,7 +49,7 @@ const Projects = () => {
         },
         {
             name: 'Seguimiento de Tareas',
-            link: 'http://sypde.xyz:8006/',
+            link: 'http://sicla.lat:8006/',
             image:dashboard,
             description:'Catalogo para poder verificar articulos de uso cotidiano en una empresa, permite crear, buscar y observar listado completo de items. ',
             languages: [
@@ -59,7 +59,7 @@ const Projects = () => {
         },
         {
             name: 'Catalogo de Articulos',
-            link: 'http://sypde.xyz:8004/',
+            link: 'http://sicla.lat:8004/',
             image:catalogo,
             description:'Catalogo para poder verificar articulos de uso cotidiano en una empresa, permite crear, buscar y observar listado completo de items. ',
             languages: [
@@ -135,7 +135,7 @@ const Projects = () => {
                         <SwiperSlide>
                         <div className="card-proyect">
                         {/* <a className="projectLink" href={project.link}> */}
-                            <img className="imagen-proyectos" src={project.image} alt=""></img>
+                            <img className="imagen-proyectos" src={project.image} width="250" height="200" alt=""></img>
                             <div className="descripcion-proyectos"> 
                                 <h2 className="titulo-proyecto">{project.name}</h2>
                                 <p className="decripcion__parrafo">

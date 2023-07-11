@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import logo from '@images/github.png'
-import cv from '@assets/pdf/Frontend_Daniel_Salazar_Munoz_CV_SP.pdf'
+import cv from '@assets/pdf/Fullstack_Daniel_Salazar_Munoz_CV_SP.pdf'
 
 const Header = () => {
 

@@ -23,11 +23,20 @@
 .card-proyect:hover{
     transform: scale(1.08);
 }
-.imagen-proyectos{
+
+.card-proyect img{
+    display: block;
+    
+    max-width: 100%;
+    height: 120px ;
+    
+}
+.card-proyect .imagen-proyectos{
+    display: block;
     border-radius: 10px 10px 0 0 ;
     border-bottom: 5px  solid rgba(225, 225, 225, 1.0);
-    width: 100%;
-    height: 200px;
+    aspect-ratio: 3/2;
+    object-fit: fill;
 }
 .descripcion-proyectos{
     position: relative;
