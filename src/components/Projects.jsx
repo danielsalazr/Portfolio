@@ -29,7 +29,7 @@ const Projects = () => {
         },
         {
             name: 'Registro de empleados',
-            link: 'http://sicla.lat:8002/',
+            link: 'https://sicla.lat:8002',
             image:empleados,
             description:'sistema para manejo de empleados de una empresa. ',
             languages: [
