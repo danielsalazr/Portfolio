@@ -16,7 +16,23 @@ import diploma_webpack from '../assets/images/certificados/diploma-webpack.jpg'
 import diploma_react_17 from '../assets/images/certificados/diploma-react-17.jpg'
 import diploma_taller_carrera from '../assets/images/certificados/diploma-taller-carrera.jpg'
 import diploma_html_practico from '../assets/images/certificados/diploma-html-practico.jpg'
-
+import diploma_frontend_developer from '../assets/images/certificados/diploma-frontend-developer.jpg'
+import diploma_ecmascript_6 from '../assets/images/certificados/diploma-ecmascript-6.jpg'
+import diploma_programacion_estructurada from '../assets/images/certificados/diploma-programacion-estructurada.jpg'
+import diploma_iot from '../assets/images/certificados/diploma-iot.jpg'
+import diploma_seguridad_empresa from '../assets/images/certificados/diploma-seguridad-empresa.jpg'
+import diploma_terminal from '../assets/images/certificados/diploma-terminal.jpg'
+import diploma_bases_de_datos from '../assets/images/certificados/diploma-bases-de-datos.jpg'
+import diploma_flexbox_css_grid from '../assets/images/certificados/diploma-flexbox-css-grid.jpg'
+import diploma_css_grid from '../assets/images/certificados/diploma-css-grid.jpg'
+import diploma_portafolios from '../assets/images/certificados/diploma-portafolios.jpg'
+import diploma_flujo_c from '../assets/images/certificados/diploma-flujo-c.jpg'
+import diploma_express_js from '../assets/images/certificados/diploma-express-js.jpg'
+import diploma_postgresql from '../assets/images/certificados/diploma-postgresql.jpg'
+import diploma_mobile_first from '../assets/images/certificados/diploma-mobile-first.jpg'
+import diploma_lenguaje_c from '../assets/images/certificados/diploma-lenguaje-c.jpg'
+import diploma_fundamentos_arduino from '../assets/images/certificados/diploma-fundamentos-arduino.jpg'
+import diploma_funciones_c from '../assets/images/certificados/diploma-funciones-c.jpg'
 
 function Certificados() {
 
@@ -67,7 +83,7 @@ function Certificados() {
             imagen : diploma_seguridad_informatica,
         },
         {
-            nombre: "Transformaciones y transiciones css",
+            nombre: " Curso Transformaciones y transiciones css",
             categoria: "Transformaciones, transiciones css",
             imagen : diploma_trasnformaciones_transiciones_css,
         },
@@ -100,7 +116,92 @@ function Certificados() {
             nombre: "Curso de Html",
             categoria: "html",
             imagen : diploma_html_practico,
-        }    
+        },
+        {
+            nombre: "Curso de Frontend",
+            categoria: "frontend",
+            imagen : diploma_frontend_developer,
+        },
+        {
+            nombre: "Curso de ecmascript",
+            categoria: "ecmascript 6",
+            imagen : diploma_ecmascript_6,
+        },
+        {
+            nombre: "Curso de Programacion estructurada",
+            categoria: "Programacion estructurada",
+            imagen : diploma_programacion_estructurada,
+        },
+        {
+            nombre: "Curso Induccion a la Terminal",
+            categoria: "Terminal",
+            imagen : diploma_terminal,
+        },
+        {
+            nombre: "Curso Induccion a la IoT",
+            categoria: "IoT",
+            imagen : diploma_iot,
+        },
+        {
+            nombre: "Curso de Seguridad para Empresas ",
+            categoria: "Seguridad",
+            imagen : diploma_seguridad_empresa,
+        },
+        {
+            nombre: "Curso de Bases de Datos",
+            categoria: "Datos",
+            imagen : diploma_bases_de_datos,
+        },
+        {
+            nombre: "Curso de Flexbox css grid",
+            categoria: "Css",
+            imagen : diploma_flexbox_css_grid,
+        },
+        {
+            nombre: "Curso de css grid",
+            categoria: "Css",
+            imagen : diploma_css_grid,
+        },
+        {
+            nombre: "Curso de creacion de portafolio y CV",
+            categoria: "CV",
+            imagen : diploma_portafolios,
+        },
+        {
+            nombre: "Curso de Flujo c",
+            categoria: "C",
+            imagen : diploma_flujo_c,
+        },
+        {
+            nombre: "Curso de Express JS",
+            categoria: "JS",
+            imagen : diploma_express_js,
+        },
+        {
+            nombre: "Curso de postgresql",
+            categoria: "Postgresql",
+            imagen : diploma_postgresql,
+        },
+        {
+            nombre: "Curso de Mobile First",
+            categoria: "Mobile First",
+            imagen : diploma_mobile_first,
+        },
+        {
+            nombre: "Curso de Lenguaje c",
+            categoria: "C",
+            imagen : diploma_lenguaje_c,
+        },
+        {
+            nombre: "Curso de Fundamentos de Hardware con Arduino",
+            categoria: "Arduino",
+            imagen : diploma_fundamentos_arduino,
+        },
+        {
+            nombre: "Curso de Funciones C",
+            categoria: "C",
+            imagen : diploma_funciones_c,
+        }
 
 
     
