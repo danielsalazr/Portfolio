@@ -5,6 +5,8 @@ import ReactDOM from 'react-dom/client';
 // import '@styles/main.css';
 //import '@styles/Header.scss';
 import '@styles/style.scss';
+import '@styles/desktop.scss';
+
 import github from '@images/github.png';
 import twitter from '@images/twitter.png';
 import instagram from '@images/instagram.png';

@@ -30,15 +30,15 @@ const Header = () => {
                     <box-icon name='menu' color={menuBtnState ? 'black' : 'white'}></box-icon>
                 </div>
             </div>
-            <div className={`nav ${menuBtnState ? 'nav__open' : 'nav__close'}`}>
+            {/* {menuBtnState ? 'nav__open' : 'nav__close'} */}
+            <div className={`nav`}> 
                 <nav>
                     <ul className="menu">
-                        <li className="Menu-Item uno"><Link to="#mi" onClick={handleClick}><span>Sobre mi</span></Link> </li>
-                        <li className="Menu-Item dos"><a href="#habilidades" onClick={handleClick}><span>Habilidades</span></a></li>
-                        <li className="Menu-Item tres"><a href="#proyectos" onClick={handleClick}><span>Proyectos</span></a></li>
-                        <li className="Menu-Item tres"><Link to="/certificaciones" onClick={handleClick}><span>Certificaciones</span></Link></li>
-                        
-                        <li className="Menu-Item cuatro"><a href={cv} ><span>Curriculum</span></a></li>
+                        <li className="Menu-Item uno"><Link to="#mi"  onClick={handleClick} className="text">Sobre mi</Link> </li>
+                        <li className="Menu-Item dos"><a href="#habilidades" onClick={handleClick} className="text">Habilidades</a></li>
+                        <li className="Menu-Item tres"><a href="#proyectos" onClick={handleClick} className="text">Proyectos</a></li>
+                        <li className="Menu-Item tres"><Link to="/certificaciones" onClick={handleClick} className="text">Certificaciones</Link></li>
+                        <li className="Menu-Item cuatro"><a href={cv} className="text">Curriculum</a></li>
                     </ul>
                 </nav>
             </div>

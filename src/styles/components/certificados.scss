@@ -1,4 +1,54 @@
+main{
+    text-align: center;
+    padding-bottom: 32px;
+    min-height: 68vh;
+    margin-bottom: 60px; 
+}
+
+h1{
+    margin: 16px 0;
+    font-size: 4rem
+}
+
+.certificates__searchBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    font-size: 2.5rem;
+    
+    label{
+        margin-right: 8px;
+    }
+
+    input[type="text"] {
+        box-sizing: border-box;
+        padding: 1px 8px;
+        width: calc(300px - 2 * 8px); 
+        max-width: 600px;
+
+    }
+}
+
+.certificates__container{
+    margin: 0 auto;
+}
+
 .bodyCards__certifications{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    justify-items:center;
+    gap: 4px 16px;
+}
+
+.bodyCards__certifications--loading{
     display: flex;
     flex-wrap: wrap;
+    justify-content: left;
+    justify-items: center;
+
 }

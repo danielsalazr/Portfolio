@@ -8,13 +8,13 @@ import Projects from '../components/Projects';
 
 function MainPage() {
   return (
-    <div>
+    <>
         <Header />
         <Container />
             {/* <Main /> */}
             <Projects />
         <Footer />
-    </div>
+    </>
   )
 }
 

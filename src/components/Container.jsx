@@ -4,10 +4,11 @@ import Skills from './Skills'
 
 const Container = ( children ) => {
   return (
-    <section className="container">
+    <main className="main-"> 
+    {/* "container" */}
       <Presentation />
       <Skills />
-    </section>
+    </main>
   )
 }
 

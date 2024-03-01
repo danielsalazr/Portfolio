@@ -1,5 +1,8 @@
 import React from 'react'
 
+import Header from '../components/Header';
+import Footer from '../components/footer';
+
 
 import diploma_dom from '../assets/images/certificados/diploma-dom.jpg'
 import diploma_javascript_poo from '../assets/images/certificados/diploma-javascript-poo.jpg'
@@ -231,108 +234,128 @@ function Certificados() {
     
 
   return (
-    <div>
-        <h1>Hola mis certificados</h1>
+    <>
+        <Header />
+        <main>
+            <h1>Certificados</h1>
 
-        {/* <form action=""> */}
-            <label htmlFor="buscarCertificados">Buscar</label>
-            <input type="text" id='buscarCertificados' 
-            // value={busqueda} 
-            onChange={ changeBusquedaValue} />
+            {/* <form action=""> */}
+            <div className="certificates__searchBar">
+                <label htmlFor="buscarCertificados">Buscar:</label>
+                <input
+                    type="text"
+                    id='buscarCertificados'
+                    value={busqueda}
+                    onChange={ changeBusquedaValue}
+                />
+            </div>
+                
+                // 
 
-            
-        {/* </form> */}
+                
+            {/* </form> */}
+
+            {/* <div className='certificates__container'> */}
+                
+                    {loading && 
+                        <div className="bodyCards__certifications">
+                            {buscarCertificado.map( element => (
+                                <div
+                                    className="card" 
+                                    style={{ 
+                                        width: "30rem",
+                                        padding: "0",
+                                    }} 
+                                >
+                                    <img 
+                                        src={element.imagen} 
+                                        className="card-img-top" 
+                                        alt="..."
+                                        style={{
+                                            borderRadius:"10px 10px 0 0"
+                                        }}
+                                    />
+                                    <div className="card-body">
+                                        <h3><b>{element.nombre}</b></h3>
+                                        {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
+                                    </div>
+                                </div> 
+                            ))}
+                        </div>
+                    }
+
+                    {!loading && 
+
+                        <div className="bodyCards__certifications--loading">
+                            <div class="card" aria-hidden="true"
+                                style={{ 
+                                    width: "30rem",
+                                    padding: "0",
+                                }} 
+                            >
+                                {/* <svg src="http://www.w3.org/2000/svg" class="card-img-top" alt="..." /> */}
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                                <div class="card-body">
+                                    <h5 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                    </h5>
+                                    <p class="card-text placeholder-glow">
+                                    <span class="placeholder col-12 placeholder-sm"></span>
+                                    <span class="placeholder col-7 placeholder-sm"></span>
+                                    {/* <span class="placeholder col-12 placeholder-sm"></span> */}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card" aria-hidden="true"
+                                style={{ 
+                                    width: "30rem",
+                                    padding: "0",
+                                }} 
+                            >
+                                {/* <svg src="http://www.w3.org/2000/svg" class="card-img-top" alt="..." /> */}
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                                <div class="card-body">
+                                    <h5 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                    </h5>
+                                    <p class="card-text placeholder-glow">
+                                    <span class="placeholder col-12 placeholder-sm"></span>
+                                    <span class="placeholder col-7 placeholder-sm"></span>
+                                    {/* <span class="placeholder col-12 placeholder-sm"></span> */}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card" aria-hidden="true"
+                                style={{ 
+                                    width: "30rem",
+                                    padding: "0",
+                                }} 
+                            >
+                                {/* <svg src="http://www.w3.org/2000/svg" class="card-img-top" alt="..." /> */}
+                                <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+                                <div class="card-body">
+                                    <h5 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                    </h5>
+                                    <p class="card-text placeholder-glow">
+                                    <span class="placeholder col-12 placeholder-sm"></span>
+                                    <span class="placeholder col-7 placeholder-sm"></span>
+                                    {/* <span class="placeholder col-12 placeholder-sm"></span> */}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                
+            {/* </div> */}
+        </main>
+
+        <Footer />
         
-        <div className="bodyCards__certifications">
-        {loading && buscarCertificado.map( element => (
-                <div
-                    className="card" 
-                    style={{ 
-                        width: "30rem",
-                        padding: "0",
-                    }} 
-                >
-                    <img 
-                        src={element.imagen} 
-                        className="card-img-top" 
-                        alt="..."
-                        style={{
-                            borderRadius:"10px 10px 0 0"
-                        }}
-                    />
-                    <div className="card-body">
-                        <h4>{element.nombre}</h4>
-                        {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-                    </div>
-                </div> 
-
-            ))}
-            {!loading && 
-
-                <div>
-                    <div class="card" aria-hidden="true"
-                        style={{ 
-                            width: "30rem",
-                            padding: "0",
-                        }} 
-                    >
-                        {/* <svg src="http://www.w3.org/2000/svg" class="card-img-top" alt="..." /> */}
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
-                        <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                            <span class="placeholder col-6"></span>
-                            </h5>
-                            <p class="card-text placeholder-glow">
-                            <span class="placeholder col-12 placeholder-sm"></span>
-                            <span class="placeholder col-7 placeholder-sm"></span>
-                            {/* <span class="placeholder col-12 placeholder-sm"></span> */}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card" aria-hidden="true"
-                        style={{ 
-                            width: "30rem",
-                            padding: "0",
-                        }} 
-                    >
-                        {/* <svg src="http://www.w3.org/2000/svg" class="card-img-top" alt="..." /> */}
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
-                        <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                            <span class="placeholder col-6"></span>
-                            </h5>
-                            <p class="card-text placeholder-glow">
-                            <span class="placeholder col-12 placeholder-sm"></span>
-                            <span class="placeholder col-7 placeholder-sm"></span>
-                            {/* <span class="placeholder col-12 placeholder-sm"></span> */}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card" aria-hidden="true"
-                        style={{ 
-                            width: "30rem",
-                            padding: "0",
-                        }} 
-                    >
-                        {/* <svg src="http://www.w3.org/2000/svg" class="card-img-top" alt="..." /> */}
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
-                        <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                            <span class="placeholder col-6"></span>
-                            </h5>
-                            <p class="card-text placeholder-glow">
-                            <span class="placeholder col-12 placeholder-sm"></span>
-                            <span class="placeholder col-7 placeholder-sm"></span>
-                            {/* <span class="placeholder col-12 placeholder-sm"></span> */}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
+        
 
         
-    </div>
+    </>
   )
 }
 
