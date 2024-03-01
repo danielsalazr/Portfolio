@@ -4,7 +4,7 @@ import Skills from './Skills'
 
 const Container = ( children ) => {
   return (
-    <main className="main-"> 
+    <main className="main"> 
     {/* "container" */}
       <Presentation />
       <Skills />

@@ -24,16 +24,15 @@ const Presentation = () => {
             <div className="content">
                 <h2 className="mi" id="mi">Sobre mi:</h2>
                 <label className="presentacion" for="">
-                Soy Full Stack Developer con background en Ingeniería electrónica, tengo experiencia en HTML, CSS, React,
-                Bootstrap y WebPack, he desarrollado proyectos para presentar datos y hacer tracking en procesos
-                industriales
-                y un sistema de riego en de una plantación. Quiero trabajar como Frontend en una empresa de
-                desarrollo con
-                aplicaciones reactivas, Soy autodidacta en formación constante, me entusiasma experimentar e
-                implementar ideas
-                con mi equipo para convertirlas en grandes experiencias para la usabilidad, accesibilidad y
+                Soy Full Stack Developer con background en Ingeniería electrónica, tengo experiencia desarrollando aplicaciones con Django, React,
+                y Bootstrap, he desarrollado proyectos para presentar datos y hacer tracking en procesos
+                industriales, sistemas de riego para plantaciónes, despacho de mercancia,solicitud de alimentacion en empresas, asignacion de codigos de barras, envio masivo de correos y mas.
+                me gustaria trabajar como Full Stack developer en una empresa de desarrollo. Soy autodidacta, mantengo en formación constante, me entusiasma experimentar e
+                implementar ideas, trabajar
+                en equipo, interactuar con personas y compartir mis cononcimientos para crecer y crear cosas innovadoras.
+                {/* para convertirlas en grandes experiencias para la usabilidad, accesibilidad y
                 presentación de
-                datos mediante el consumo de API’s.
+                datos mediante el consumo de API’s. */}
                 </label>
             </div>
         </div>
