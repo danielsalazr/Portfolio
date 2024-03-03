@@ -7,17 +7,25 @@ const Presentation = () => {
         <div className="yo">
             <div className="yo__sideCard">
                 <img className="foto" src={photo} alt=""></img>
-                <div>
-                <h2 >Full Stack Developer</h2>
-                
-                <ul className="referencias">
-                    <b>Contactame:</b> 
-                    <li><span>Cali, colombia</span> <span className="ubicacion"></span></li>
-                    <li><a href="https://www.linkedin.com/in/daniel-salazar-mu%C3%B1oz-b54077a8/">Linked In <span
-                        className="linkedin"></span></a></li>
-                    <li><a href="https://github.com/danielsalazr">GitHub <span className="github"></span></a></li>
-                    <li><a href="mailto:danielsalazr@hotmail.com">E-Mail <span className="email"></span></a></li>
-                </ul>
+                <div >
+                    <h2 >Full Stack Developer</h2>
+                    <div className='yo__locationContainer'>
+                        <img src="../assets/images/icons/placeholder.png" className="imageLocation" alt="" />
+                        <span>Cali, colombia</span>
+                    </div>
+                    {/* <span className="ubicacion"></span> */}
+                    <h2 className="yo__contactMe--title"><b>Contactame:</b></h2> 
+                    <div className="referencias">
+                        {/* <li> */}
+                        <a href="https://www.linkedin.com/in/daniel-salazar-mu%C3%B1oz-b54077a8/"><span className="linkedin"></span></a>
+                        {/* </li> */}
+                        {/* <li> */}
+                        <a href="https://github.com/danielsalazr"> <span className="github"></span></a>
+                        {/* </li>
+                        <li> */}
+                        <a href="mailto:danielsalazr@hotmail.com"> <span className="email"></span></a>
+                        {/* </li> */}
+                    </div>
                 </div>
 
             </div>

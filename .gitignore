@@ -42,3 +42,5 @@ build/
 .cache
 
 .webpack/
+
+anotaciones.txt

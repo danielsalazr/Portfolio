@@ -23,6 +23,10 @@
     min-width: 90px;
     max-width: 400px;
 }
+
+
+
+
 .yo__sideCard div{
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
@@ -30,6 +34,15 @@
     padding: 16px;
     // padding-top: 10px; 
     // padding-bottom: 10px;
+}
+
+div.yo__locationContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 2px;
+    gap: 12px;
 }
 .yo__sideCard div h2{
     /* display: block; */
@@ -66,18 +79,49 @@
     border-radius: 10px;
 }
 
+.yo__contactMe--title{
+    margin-bottom: 12px;
+}
+
 .referencias {
-    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    // font-size: 2.8rem;
     text-align: left;
+    padding: 0;
+    margin: 0;
+
+    > a{
+        margin: 0 auto;
+        vertical-align: middle;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    // li > a{
+    //     margin: 0 auto;
+    //     vertical-align: middle;
+    //     width: fit-content;
+    //     height: fit-content;
+    // }
+
+    // li 
+    > a > span{
+        margin: 0 auto;
+        width: 36px;
+        height: 36px;
+    }
 }
 
 .referencias li{
     list-style-type: none;
     padding: 0;
+    // margin: 0 auto;
 }
 .referencias li a:visited,a:link,a:active,span {
     text-decoration: none;
-    font-size: 2.5rem;
+    // font-size: 2.5rem;
+    margin: 0;
     // color: white;
 }
 
@@ -88,7 +132,7 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-left: 10px;
+    // margin-left: 10px;
     z-index: 2;
 }
 .ubicacion{
@@ -97,6 +141,13 @@
     border-radius: 9px;
     
   }
+.imageLocation{
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 4px;
+    width: 32px
+}
+  
 .linkedin{
     
     background-image: url("../assets/images/icons/linkedin.png");

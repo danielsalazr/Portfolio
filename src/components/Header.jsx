@@ -34,9 +34,9 @@ const Header = () => {
             <div className={`nav`}> 
                 <nav>
                     <ul className="menu">
-                        <li className="Menu-Item uno"><Link to="#mi"  onClick={handleClick} className="text">Sobre mi</Link> </li>
-                        <li className="Menu-Item dos"><a href="#habilidades" onClick={handleClick} className="text">Habilidades</a></li>
-                        <li className="Menu-Item tres"><a href="#proyectos" onClick={handleClick} className="text">Proyectos</a></li>
+                        <li className="Menu-Item uno"><Link to="/#mi"  onClick={handleClick} className="text">Sobre mi</Link> </li>
+                        <li className="Menu-Item dos"><a href="/#habilidades" onClick={handleClick} className="text">Habilidades</a></li>
+                        <li className="Menu-Item tres"><a href="/#proyectos" onClick={handleClick} className="text">Proyectos</a></li>
                         <li className="Menu-Item tres"><Link to="/certificaciones" onClick={handleClick} className="text">Certificaciones</Link></li>
                         <li className="Menu-Item cuatro"><a href={cv} className="text">Curriculum</a></li>
                     </ul>
