@@ -1,6 +1,8 @@
 import React from 'react'
 import photo from '@images/foto.png'
 
+import locationIcon from '../assets/images/icons/placeholder.png'
+
 const Presentation = () => {
   return (
     <>
@@ -10,7 +12,7 @@ const Presentation = () => {
                 <div >
                     <h2 >Full Stack Developer</h2>
                     <div className='yo__locationContainer'>
-                        <img src="../assets/images/icons/placeholder.png" className="imageLocation" alt="" />
+                        <img src={locationIcon} className="imageLocation" alt="" />
                         <span>Cali, colombia</span>
                     </div>
                     {/* <span className="ubicacion"></span> */}

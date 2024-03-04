@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     const [menuBtnState, setMenuBtnState] = useState(false);
+    const [checkboxState, setCheckboxState] = useState(false);
 
     function manejarCambioCheckbox() {
         setMenuBtnState(!menuBtnState);
+        setCheckboxState(!checkboxState);
     }
 
     function handleClick(event) {
@@ -27,12 +29,15 @@ const Header = () => {
             <div className="header__nombre">
                 <span>Portafolio Daniel Salazar</span>
                 <div className={`${menuBtnState ? 'menu-btn__pressed' : ''} nav-btn`} onClick={manejarCambioCheckbox}>
+                    
                     <box-icon name='menu' color={menuBtnState ? 'black' : 'white'}></box-icon>
                 </div>
             </div>
             {/* {menuBtnState ? 'nav__open' : 'nav__close'} */}
+            <input className="menu--checkbox" type="checkbox" name="" id="" checked={checkboxState} />
             <div className={`nav`}> 
                 <nav>
+                <input className="menu--checkbox" type="checkbox" name="" id="" checked={checkboxState} />
                     <ul className="menu">
                         <li className="Menu-Item uno"><Link to="/#mi"  onClick={handleClick} className="text">Sobre mi</Link> </li>
                         <li className="Menu-Item dos"><a href="/#habilidades" onClick={handleClick} className="text">Habilidades</a></li>

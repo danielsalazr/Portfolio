@@ -6,17 +6,79 @@ header{
   display: flex;
   flex-direction: column;
   font-size: 2rem;
-  padding: 30px;
+  // padding: 30px;
   text-align: center;
+  position: relative;
   /* margin-bottom: 20px; */
 }
 
 .header__nombre{
   font-size: 3rem;
-  margin-top: 20px;
+  // margin-top: 20px;
   color: white;
+  padding: 24px 30px 8px 30px;
 }
 
+.nav{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+
+  // display: none;
+
+  nav{
+    width: 100%;
+  }
+
+  transition: height 0.3s ease;
+
+}
+
+.nav-btn{
+
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+
+  
+  
+  // transition: background-color 0.3s ease;
+}
+
+
+
+// .nav-btn {
+//   display: inline-block;
+//   height: -moz-fit-content;
+//   height: fit-content;
+//   position: absolute;
+//   right: 5%;
+//   color: #eee;
+//   border: 1px solid #FFFFFF;
+//   border-radius: 5px;
+//   padding: 5px 5px 0 5px;
+//   transition: background-color 0.5s ease;
+// }
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.31);
+}
+
+.menu-btn__pressed {
+  background-color: #FFFFFF;
+}
+
+// .menu-btn__pressed {
+//   background-color: #FFFFFF;
+// }
 // input[type=checkbox] {
 //   appearance: none;
 //   cursor: pointer;
@@ -44,13 +106,56 @@ header{
   display: block;
   color: white;
   list-style: none;
+  padding: 0;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    width: 100%;
+    height: 2.5em;
+    transition: height 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+
+  li:hover{
+    background-color: rgba($color: #ffffff, $alpha: 0.2);
+  }
+
+  li a {
+    width: 100%;
+  }
 
 
+}
+
+.menu--checkbox{
+  display: none;
+}
+
+// .menu--checkbox:checked ~ .menu li{
+//   // background-color: magenta;
+//   // font-size: 6rem;
+//   height: 2.5em;
+// }
+
+.menu--checkbox:checked ~ div{
+  // background-color: magenta;
+  // font-size: 6rem;
+  height: 250px;
+}
+
+.menu li:first-child{
+  border-top: 1px solid #000000;
 }
 
 
 .Menu-Item{
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu li a:visited,a:link,a:active{
   font-size: 2.6rem;

@@ -65,7 +65,7 @@ body {
   display: none;
 }
 
-.nav-btn {
+/* .nav-btn {
   display: inline-block;
   height: -moz-fit-content;
   height: fit-content;
@@ -84,7 +84,7 @@ body {
 
 .menu-btn__pressed {
   background-color: #FFFFFF;
-}
+} */
 
 .nav {
   margin-top: 12px;
