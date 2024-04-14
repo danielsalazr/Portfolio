@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect  } from 'react'
 import logo from '@images/github.png'
 import cv from '@assets/pdf/Fullstack_Daniel_Salazar_Munoz_CV_SP.pdf'
 import { Link } from 'react-router-dom';
@@ -8,6 +8,27 @@ const Header = () => {
 
     const [menuBtnState, setMenuBtnState] = useState(false);
     const [checkboxState, setCheckboxState] = useState(false);
+    const [anchoPantalla, setAnchoPantalla] = useState(window.innerWidth);
+
+
+    useEffect(() => {
+        const actualizarAnchoPantalla = () => {
+          setAnchoPantalla(window.innerWidth);
+          if (window.innerWidth > 799) {
+            setMenuBtnState(false)
+            setCheckboxState(false)
+        
+        };
+
+        }
+    
+        window.addEventListener('resize', actualizarAnchoPantalla);
+    
+        // // Limpia el event listener cuando el componente se desmonta
+        return () => {
+          window.removeEventListener('resize', actualizarAnchoPantalla);
+        };
+      }, []);
 
     function manejarCambioCheckbox() {
         setMenuBtnState(!menuBtnState);
@@ -15,12 +36,12 @@ const Header = () => {
     }
 
     function handleClick(event) {
-    // event.preventDefault();
-    setMenuBtnState(!menuBtnState);
-    // setAnimado(true);
-    setTimeout(() => {
-        window.location.href = href;
-    }, 1000); // 1000ms = 1 segundo
+        // event.preventDefault();
+        setMenuBtnState(!menuBtnState);
+        // setAnimado(true);
+        setTimeout(() => {
+            window.location.href = href;
+        }, 1000); // 1000ms = 1 segundo
     }
 
     

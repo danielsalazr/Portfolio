@@ -112,16 +112,18 @@ header{
     padding: 0;
   }
 
+  @media only screen and (max-width: 600px) {
   li {
     width: 100%;
     height: 2.5em;
-    transition: height 0.3s ease;
-    transition: background-color 0.3s ease;
+    // transition: height 0.3s ease;
+    // transition: background-color 0.3s ease;
   }
 
   li:hover{
     background-color: rgba($color: #ffffff, $alpha: 0.2);
   }
+}
 
   li a {
     width: 100%;
@@ -157,6 +159,7 @@ header{
   align-items: center;
   justify-content: center;
 }
+
 .menu li a:visited,a:link,a:active{
   font-size: 2.6rem;
   color: white;

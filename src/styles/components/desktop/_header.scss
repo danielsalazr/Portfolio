@@ -29,6 +29,7 @@
     //   outline: 1px solid gold; 
       height: 45px;
       width: 70%;
+      min-width: 657px;
       opacity: 1;
       display: flex; 
       box-sizing: border-box;
@@ -63,6 +64,8 @@
         height: inherit;
         padding: 4px 0;
         margin: 0;
+        // transition: height 0.3s ease;
+        // transition: background-color 0.3s ease;
       }
 
       li a {
@@ -70,6 +73,7 @@
         width: 100%;
         vertical-align: middle;
         height: fit-content;
+        text-wrap: nowrap;
       }
 
     //   li span{
@@ -77,8 +81,9 @@
     //     width: 100%;
     //     // padding-bottom: 5px;
     //   }
+    
+    
 
-      
     }
     .Menu-Item {
       display: flex;
@@ -90,12 +95,25 @@
       align-content: center;
       line-height: 3rem; /* con esto podemos alinear facilmente de manera vertical siempre que haya solo una linea*/
       text-align: center;
-      transition: flex 0.5s, border 0.5s, color 0.3s, background 0.5s;
+      transition: flex 0.5s, border 0.5s, color 0.3s, background-color 0.5s;
       margin: 5px;
+      height: fit-content;
     }
+
+    
     .Menu-Item:hover {
       flex: 2;
       color: black;
       background: rgba(220, 220, 220, 0.5);
       border-style: solid;
     }
+
+    .menu li:first-child{
+      border-top: none;
+    }
+
+    .menu li:first-child:hover{
+      border-top: gainsboro solid;
+    }
+
+    
